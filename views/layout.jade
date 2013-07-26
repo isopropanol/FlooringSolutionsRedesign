@@ -1,12 +1,170 @@
 !!!5
 html
 	head
-		title #{title} - NODESITE
-		link( href="/groundwork-master/css/groundwork.css", rel="stylesheet")
-		link(rel='stylesheet',href='/stylesheets/style2.css')
-		script(src="/scripts/jquery-2.0.0.min.js")
-		
+		//
+			SEO STUFF START HERE 
+		title reDesign Home Page
+		meta(name='keywords', content='')
+		meta(name='description', content='')
+		meta(name='author', content='')
+		meta(name='robots', content='follow, index')
+		//
+			SEO STUFF END 
+		meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		//
+			revolution slider plugin : begin 
+		link(rel='stylesheet', type='text/css', href='rs-plugin/css/settings.css', media='screen')
+		link(rel='stylesheet', type='text/css', href='css/rs-responsive.css', media='screen')
+		//
+			revolution slider plugin : end 
+		link(rel='stylesheet', href='css/bootstrap.css')
+		link(rel='stylesheet', href='css/custom.css')
+		link(rel='stylesheet', href='css/css3-menu.css')
+		link(rel='stylesheet', href='css/isotope.css')
+		link(rel='stylesheet', href='css/color_scheme.css')
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Raleway:400,900,500,600,700,800', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/font-awesome.css')
+		link(rel='stylesheet', href='css/font-awesome-ie7.css')
+		link(rel='stylesheet', href='css/flexslider.css')
+		link(rel='stylesheet', href='css/jquery.fancybox.css?v=2.1.0', type='text/css', media='screen')
+		//if lte IE 8
+			link(rel='stylesheet', type='text/css', href='css/IE-fix.css')
 	body
-		.container
+		.top_line
+		header
+			.container
+			.row
+				//HEADER: LOGO AREA 
+				.span4.logo
+				a.logo(href='index.html')
+					img(alt='logo', title='ReDesign', src='img/logo.png')
+				.span4.offset4
+				//
+					HEADER: PHONE NUMBER 
+				p.head_phone
+					span.icon-phone
+					a(href='tel:555-555-5555') (800) 655-7800
+				//
+					HEADER: SOCIAL ICONS 
+				ul.socials.unstyled
+				li
+					a.flickr(data-rel='tooltip', title='Follow us on Flickr', href='#')
+				li
+					a.twitter(data-rel='tooltip', title='Follow us on Twitter', href='#')
+				li
+					a.facebook(data-rel='tooltip', title='Follow us on Facebook', href='#')
+				li
+					a.youtube(data-rel='tooltip', title='Follow us on Youtube', href='#')
+				li
+					a.dribbble(data-rel='tooltip', title='Follow us on Dribbble', href='#')
+				li
+					a.pinterest(data-rel='tooltip', title='Follow us on Pinterest', href='#')
+		.navbar-wrapper
+			.container
+				.navbar
+					.navbar-inner
+						.buttons-container
+							ul#css3-menu.blue.nav
+								li.dropdown
+									a.dropdown-toggle_(data-toggle='dropdown', href='index.html') Home
+									ul.dropdown-menu
+										li
+											a(href='index.html') Home Page
+								li.dropdown
+									a.dropdown-toggle_(data-toggle='dropdown', href='') Features
+									ul.dropdown-menu
+										li
+											a(href='product-info.html') Product Information
+										li
+											a(href='product-tour.html') Feature Tour
+										li
+											a(href='product-release-history.html') Product History
+										li
+											a(href='faqs-support.html') FAQs/Support
+								li.dropdown
+									a.dropdown-toggle_(data-toggle='dropdown', href='') Portfolio
+									ul.dropdown-menu
+										li
+											a(href='portfolio-grid.html') Portfolio Grid
+										li
+											a(href='portfolio-item.html') Portfolio Item
+								li.dropdown
+									a.dropdown-toggle_(data-toggle='dropdown', href='') Pages
+									ul.dropdown-menu
+										li
+											a(href='about.html') About Us
+										li
+											a(href='contactus.html') Contact Us
+		.main-wrapper
 			.main-content
-				block content
+				.container
+		footer#footer
+			.footer-top
+				.footer-wrapper
+					.container
+						.row.show-grid
+							.span12
+								.row.show-grid
+									.span4
+										img.footer-logo(alt='', src='img/grey_logo.png')
+										address.address
+											p
+												i.icon-map-marker.icon-large
+												| 1800 North Central Expressway
+											p
+												i  
+												| Suite 800
+											p
+												i  
+												| Dallas, Texas 75231
+											p
+												i.icon-phone.icon-large
+												| Phone: (800) 655-7800
+											p
+												i.icon-print.icon-large
+												| Fax: (800) 655-7800
+									.span4.footer-center
+										h4.center-title About Us
+										p
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat.
+										p
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus.
+									//FOOTER: NAVIGATION LINKS 
+									.span4.footer-right
+										h4.center-title Navigate
+										ul.footer-navigate
+											li
+												a(href='') Home
+											li
+												a(href='') Features
+											li
+												a(href='') Pages
+											li
+												a(href='') Portfolio
+											li
+												a(href='') Blog
+											li
+												a(href='') Contact
+			.footer-bottom
+				.container
+					.row.show-grid
+						//FOOTER: COPYRIGHT TEXT 
+						.span12
+							p
+								| reDesign Premium HTML Template by
+								a(href='http://www.themeleaf.com') Themeleaf
+								| . Copyright 2012
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+		script(type='text/javascript', src='js/bootstrap.js')
+		script(type='text/javascript', src='js/jquery.flexslider-min.js')
+		script(type='text/javascript', src='js/jquery.isotope.js')
+		script(type='text/javascript', src='js/jquery.imagesloaded.min.js')
+		script(type='text/javascript', src='js/jquery.fancybox.pack.js?v=2.1.0')
+		script(type='text/javascript', src='rs-plugin/js/jquery.themepunch.plugins.min.js')
+		script(type='text/javascript', src='rs-plugin/js/jquery.themepunch.revolution.min.js')
+		script(type='text/javascript', src='js/revolution.custom.js')
+		script(type='text/javascript', src='js/custom.js')
+
+
