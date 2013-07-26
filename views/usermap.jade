@@ -1,0 +1,47 @@
+extend layout
+
+block content
+	//script(type="text/javascript",src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoS6Hv80Yr68F319i_hG-h0H9yd7mRe_A&sensor=false&libraries=places")
+	script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false",type="text/javascript")
+	//script(type="text/javascript")
+		function initialize() {
+			var mapOptions = {
+			center: new google.maps.LatLng(40.762919,-73.979568), zoom: 8,mapTypeId: google.maps.MapTypeId.ROADMAP};
+			var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+			}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	script(type="text/javascript")
+			var geocoder;
+			var map;
+			function initialize() {
+				geocoder = new google.maps.Geocoder();
+				var latlng = new google.maps.LatLng(40.761359,-73.980598);
+				var mapOptions = {
+					zoom: 8,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				codeAddress()
+			}
+
+			function codeAddress() {
+			var address = "accenture in washington, dc";
+			geocoder.geocode( { 'address': address}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					map.setCenter(results[0].geometry.location);
+					var marker = new google.maps.Marker({
+						map: map,
+						position: results[0].geometry.location
+					});
+				} else {
+				alert('Geocode was not successful for the following reason: ' + status);
+				}
+			});
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+	.one.centered.half.padded(style="z-index:45;background:rgba(100,100,100,.7);text-align:center;")
+		h1(style="color:white;") Now find your friends!
+		h5.white Now what??
+		#map-canvas(style="height:400px;")
+	
