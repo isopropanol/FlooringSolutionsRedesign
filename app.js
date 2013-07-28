@@ -23,9 +23,9 @@ app.get('/',function(req,res){
 	res.render('index',
 		{title:"Hoos Working Where"}		)
 })
-app.get('/selectjob',function(req,res){
-	res.render('selectjob',
-		{title:"What's your plan"}		)
+app.get('/gallery',function(req,res){
+	res.render('gallery',
+		{title:"Gallery"}		)
 })
 
 app.post('/selectjob/detailsubmission',function(req,res){
