@@ -27,6 +27,10 @@ app.get('/gallery',function(req,res){
 	res.render('gallery',
 		{title:"Gallery"}		)
 })
+app.get('/portfolio',function(req,res){
+	res.render('portfolio',
+		{title:"Portfolio"}		)
+})
 
 app.post('/selectjob/detailsubmission',function(req,res){
 	//var name = req.body.place;
