@@ -23,9 +23,9 @@ app.get('/',function(req,res){
 	res.render('index',
 		{title:"Hoos Working Where"}		)
 })
-app.get('/gallery',function(req,res){
-	res.render('gallery',
-		{title:"Gallery"}		)
+app.get('/about',function(req,res){
+	res.render('about',
+		{title:"About"}		)
 })
 app.get('/portfolio',function(req,res){
 	res.render('portfolio',
