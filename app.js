@@ -29,7 +29,11 @@ app.get('/about',function(req,res){
 })
 app.get('/portfolio',function(req,res){
 	res.render('portfolio',
-		{title:"Portfolio"}		)
+		{title:"Gallery"}		)
+})
+app.get('/services',function(req,res){
+	res.render('services',
+		{title:"Services"}		)
 })
 
 app.post('/selectjob/detailsubmission',function(req,res){
