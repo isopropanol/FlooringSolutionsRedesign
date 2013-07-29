@@ -1,0 +1,64 @@
+extend layout
+block content
+	.page-title.page-title-map.stacked-title
+		.container
+			.row.show-grid
+				.span12
+					h1 Contact Flooring Solutions, Inc.
+	.main-wrapper
+		.main-content
+				.container
+					.row.show-grid
+						.span12(data-original-title='')
+							.clear_both
+							.col-wrapper
+								.row.show-grid
+									.contact-form.span8
+										form#validForm
+											.control-group
+												label.control-label(for='inputName')
+													| NAME
+													sup *
+												.controls
+													input#inputName.span4(type='text', placeholder='Name')
+													span.help-inline Please fill your name
+											.control-group
+												label.control-label(for='inputEmail')
+													| EMAIL
+													sup *
+												.controls
+													input#inputEmail.span4(type='text', placeholder='Email')
+													span.help-inline Please correct your email
+											.control-group
+												label.control-label(for='textarea')
+													| COMMENT
+													sup *
+												.controls
+													textarea#textarea.span8(rows='4')
+													span.help-inline Please write a comment
+											.control-group.form-button-offset
+												input.btn(type='submit', value='Send Message')
+									.contact-info.span3.offset1.sidebar-baloon
+										h2 reDesign
+										address
+											| 1234 Main Street,
+											br
+											| Anytown,
+											br
+											| USA
+											br
+											| Phone: 123 456 7890
+											br
+											| Fax: +49 123 456 7891
+											br
+											| Email:
+											em
+												a(href='mailto:hello@example.com') hello@example.com
+											br
+											| Web:
+											em
+												a(href='#') example.com
+										.address-tick
+									.line_title
+										h2 Need Directions?
+									iframe(style='width: 100%; height: 600px; border: none;', src='http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Mockingbird+Station,+Dallas,+TX&aq=1&oq=mockinStation,+Dallas,+TX&sll=32.786144,-96.788897&sspn=0.00929,0.018947&ie=UTF8&hq=&hnear=Mockingbird+Station,+Dallas,+Texas+75206&t=m&ll=32.845774,-96.772385&spn=0.043266,0.061712&z=14&iwloc=A&output=embed')

@@ -43,8 +43,12 @@ app.get('/projects',function(req,res){
 	res.render('projects',
 		{title:"Projects"}		)
 })
+app.get('/contactus',function(req,res){
+	res.render('contactus',
+		{title:"Contact Us"}		)
+})
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
   console.log("Listening on " + port);
