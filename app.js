@@ -43,6 +43,10 @@ app.get('/projects',function(req,res){
 	res.render('projects',
 		{title:"Projects"}		)
 })
+app.get('/contactus',function(req,res){
+	res.render('contactus',
+		{title:"Contact Us"}		)
+})
 
 var port = process.env.PORT || 3000;
 
