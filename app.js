@@ -39,6 +39,10 @@ app.get('/products',function(req,res){
 	res.render('products',
 		{title:"Products"}		)
 })
+app.get('/gallery',function(req,res){
+	res.render('gallery',
+		{title:"Gallery"}		)
+})
 
 
 app.listen(3000);
