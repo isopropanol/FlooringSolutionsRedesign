@@ -47,6 +47,10 @@ app.get('/contactus',function(req,res){
 	res.render('contactus',
 		{title:"Contact Us"}		)
 })
+app.get('/team',function(req,res){
+	res.render('team',
+		{title:"Team"}		)
+})
 
 var port = process.env.PORT || 3000;
 
