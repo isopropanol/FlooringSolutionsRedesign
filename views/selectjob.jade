@@ -1,0 +1,67 @@
+extend layout
+block content
+	script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false",type="text/javascript")
+	.one.centered.half.padded(style="z-index:45;background:rgba(100,100,100,.7);text-align:center;")
+		h1(style="color:white;") What's your plan for the summer?
+		.small-tablet.padded.tiles.selectfutureoptions
+			.tile.selectfuture
+				i.icon-user
+				| I haz jobz
+			.tile.selectfuture
+				i.icon-user-md
+				| I has gradsch00l
+			.tile.selectfuture
+				i.icon-plane
+				| Traveling
+			.tile.selectfuture
+				i.icon-glass
+				| Still Searching
+		script(type="text/javascript")
+			$(function(){
+				$(".selectfutureoptions").delegate(".selectfuture","click",function(){
+						$(".selectfutureinfo").slideDown(200);
+					})
+			});
+		.padded.selectfutureinfo(style="display:none")
+			h2.white Where are you working?
+			form(action="",method="")
+				input.thisisjob(placeholder="Business/school?", name="place",required,type="text")
+				input.thisiscity(placeholder="City?",name="city",required,type="text")
+				input.thisiscountry(placeholder="Country",name="country",required,type="text")
+				input.submitresult(type="submit",value="Done")
+				a.submitresult.button TESTING FUNCTION
+		script(type="text/javascript")
+			var geocoder;
+			var map;
+			function codeAddress(job,city,country) {
+				var address = job+" in "+city+", "+country;
+				geocoder.geocode( { 'address': address}, function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK) {
+						alert(results[0].geometry.location);
+						var locationdata = results[0].geometry.location;
+						$.ajax({
+							type:"POST",
+							url:"/selectjob/detailsubmission",
+							data: {data:locationdata},
+							dataType:'JSON'
+							});
+					} else {
+					alert('Geocode was not successful for the following reason: ' + status);
+					}
+				});
+			}
+			$(function(){
+			$(".one.centered.half.padded").delegate(".submitresult","click",function(){
+					geocoder = new google.maps.Geocoder();
+					var job = $(".thisisjob").val(),
+						city = $(".thisiscity").val(),
+						country = $(".thisiscountry").val(),
+						job ="Barclays",
+						city = "New York City",
+						country = "USA";
+					codeAddress(job,city,country);
+					//alert(clean_address);
+
+				})
+			});
+			
