@@ -29,22 +29,15 @@ app.get('/about',function(req,res){
 })
 app.get('/portfolio',function(req,res){
 	res.render('portfolio',
-		{title:"Gallery"}		)
+		{title:"Portfolio"}		)
 })
 app.get('/services',function(req,res){
 	res.render('services',
 		{title:"Services"}		)
 })
-
-app.post('/selectjob/detailsubmission',function(req,res){
-	//var name = req.body.place;
-		//city = req.body.city,
-		//country= req.body.country;
-	console.log(" in "+req.body.data);
-	res.redirect("/usermap");
-});
-app.get('/usermap', function(req,res){
-	res.render('usermap',
-		{title:"Hoos Working Where"})
+app.get('/products',function(req,res){
+	res.render('products',
+		{title:"Products"}		)
 })
+
 app.listen(3000);
