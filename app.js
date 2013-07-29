@@ -44,5 +44,8 @@ app.get('/projects',function(req,res){
 		{title:"Projects"}		)
 })
 
+var port = process.env.PORT || 5000;
 
-app.listen(3000);
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
