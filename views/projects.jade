@@ -1,0 +1,33 @@
+extend layout
+block content
+	.page-title.page-title-blue.stacked-title
+		.container
+			.row.show-grid
+				.span12
+					h1 Projects
+	.main-wrapper
+			.main-content
+					.container
+						.col-wrapper
+							.portfolio-nav
+								ul#filters.nav.nav-pills.nav-pills-portfolio(data-option-key='filter',style="display:none;")
+									li.active
+										a(href='#', data-toggle='pill', data-filter='*') All
+									li
+										a(href='#', data-toggle='pill', data-filter='.web') Web
+									li
+										a(href='#', data-toggle='pill', data-filter='.print') Print
+									li
+										a(href='#', data-toggle='pill', data-filter='.photo') Photo
+									li
+										a(href='#', data-toggle='pill', data-filter='.video') Video
+							.portfolio-grid-1.main-block
+								ul#gallery.thumbnails
+									li.span3.small.hp-wrapper.web
+										a(href='#')
+											img.hover-shade(alt='', src='img/220_arrow_hover.png')
+										a.top-link(href='#')
+											img(alt='', style='width: 220px; height: 160px;', src='img/item_220-160_01.jpg')
+										.bottom-block
+											a(href='#') reDesign Rocket
+											p UI Design
