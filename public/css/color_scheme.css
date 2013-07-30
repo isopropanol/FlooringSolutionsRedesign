@@ -3,6 +3,8 @@
 
 .top_line {
     background-color: #2773ae;
+    /* switch to greenn */
+    background-color: #85bf4d;
 }
 
 /* Color that link text will appear as
@@ -306,6 +308,9 @@ blockquote.blueb p {
 /*Light blue h1 title*/
 .page-title-blue {
     background-color: #3e92d0;
+}
+.page-title-green{
+    background-color: #a3cd3d;
 }
 /*Dark blue h1 title*/
 .page-title-dark-blue {
