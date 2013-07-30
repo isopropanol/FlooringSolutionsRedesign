@@ -1468,11 +1468,11 @@ ul.icons {
 .navbar .nav > li .dropdown-menu {
     border-radius: 0 0 10px 10px;
     box-shadow: none;
-    background-color: #074979;
+    background-color: #5f992d;
     min-width: 200px;
 }
 .navbar .nav > li .dropdown-menu li {
-    border-bottom: 1px solid #0064ac;
+    border-bottom: 1px solid #85bf4d;
 }
 .navbar .nav > li .dropdown-menu :last-child {
     border: none;

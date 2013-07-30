@@ -266,7 +266,7 @@ ul#css3-menu.blue > li:hover{
 
 /* green theme */
 .navbar-wrapper.green {
-    //newbackground
+    /*newbackground*/
     background:#85bf4d;
 	background-color:#85bf4d; filter: progid:DXImageTransform.Microsoft.dropShadow(color=#85bf4d, offX=0, offY=0, positive=true);  
     box-shadow: 0 -10px 8px -10px #2e7336 inset, 0 10px 8px -10px #2e7336 inset; 
