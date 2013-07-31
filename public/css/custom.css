@@ -2050,7 +2050,7 @@ input.btn {
 .side-nav ul li a:hover {
     text-decoration: none;
     color: #ffffff;
-    background-color: #0088cc;
+    background-color: rgb(163,205,61);
 }
 .side-nav ul .first-nav-child {
     border-radius: 5px 5px 0 0;

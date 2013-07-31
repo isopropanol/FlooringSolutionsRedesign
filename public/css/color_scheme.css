@@ -336,7 +336,7 @@ blockquote.blueb p {
 /*Active sidebar navigation list item background*/
 .side-nav .active a {
     color: #ffffff;
-    background-color: #0088cc;
+    background-color: rgb(163,205,61);
 }
 /*Sidebar grey box links color*/
 .sidebar-grey-box a {
