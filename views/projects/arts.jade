@@ -1,5 +1,6 @@
 extends ../layout
 block append content
+
 	.page-title.page-title-green.stacked-title
 		.container
 			.row.show-grid
@@ -98,4 +99,11 @@ block append content
 							a.top-link.thumbnail(href='/images/Arts-Entertainment/CovLifeChurch.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Arts-Entertainment/CovLifeChurch.jpg')
-
+	script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+	script
+			$('.span9.main-column.two-columns-left p a').each(function(e){
+					var href = $(this).attr('href');
+					var val = $(this).text();
+					$(href).prepend('<h3>'+val+'</h3>');
+				})
+		
