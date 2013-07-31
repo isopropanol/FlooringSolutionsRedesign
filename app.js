@@ -59,6 +59,31 @@ app.get('/commercial',function(req,res){
 	res.render('projects/commercial',
 		{title:"Commercial"}		)
 })
+app.get('/condominiums',function(req,res){
+	res.render('projects/condominiums',
+		{title:"Condominiums and Hospitality"}		)
+})
+app.get('/education',function(req,res){
+	res.render('projects/education',
+		{title:"Education"}		)
+})
+app.get('/floorleveling',function(req,res){
+	res.render('projects/floorleveling',
+		{title:"Floor Leveling"}		)
+})
+app.get('/government',function(req,res){
+	res.render('projects/government',
+		{title:"Government"}		)
+})
+app.get('/health',function(req,res){
+	res.render('projects/health',
+		{title:"Health"}		)
+})
+app.get('/lawfirms',function(req,res){
+	res.render('projects/lawfirms',
+		{title:"Law Firms"}		)
+})
+
 
 var port = process.env.PORT || 3000;
 

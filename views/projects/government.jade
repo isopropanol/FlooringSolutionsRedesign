@@ -1,0 +1,66 @@
+extends ../layout
+block append content
+	.page-title.page-title-green.stacked-title
+		.container
+			.row.show-grid
+				.span12
+					h1 Products
+	.main-content
+		.container
+				.row.show-grid
+					.span12
+						.row.show-grid.clear-both
+							#left-sidebar.span3.sidebar
+								.side-nav.sidebar-block.left-side-nav
+									ul
+										li.first-nav-child
+											a(href='/arts') Arts and Entertainment
+											.side-tick.left-side-tick
+										li
+											a(href='/commercial') Commercial
+											.side-tick.left-side-tick
+										li
+											a(href='/condominiums') Condominiums and Hospitality 
+											.side-tick.left-side-tick
+										li
+											a(href='/education') Education
+											.side-tick.left-side-tick
+										li
+											a(href='/floorleveling') Floor Leveling
+											.side-tick.left-side-tick
+										li.active
+											a(href='/government') Government
+											.side-tick.left-side-tick
+										li
+											a(href='/health') Health
+											.side-tick.left-side-tick
+										li.last-nav-child
+											a(href='/lawfirms') Law Firms
+											.side-tick.left-side-tick
+							.span9.main-column.two-columns-left
+							
+								p
+									a(href="#gallery-0") Department of Defense
+								p
+									a(href="#gallery-1") General Services Administration
+							
+				.portfolio-grid-1.main-block.col-wrapper
+					ul#gallery-0.thumbnails.gallery(style="position:relative;")
+						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
+							a.top-link.thumbnail(href='/images/Government/DepartmentofDefense.jpg', data-rel='group')
+								img.hover-shade(alt='', src='img/gal_hover.png')
+								img(alt='', style='width: 220px; height: 160px;', src='/images/Government/DepartmentofDefense.jpg')
+						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
+							a.top-link.thumbnail(href='/images/Government/DOD.jpg', data-rel='group')
+								img.hover-shade(alt='', src='img/gal_hover.png')
+								img(alt='', style='width: 220px; height: 160px;', src='/images/Government/DOD.jpg')
+					ul#gallery-1.thumbnails.gallery(style="position:relative;")
+						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
+							a.top-link.thumbnail(href='/images/Government/GSA-CSov(1).JPG', data-rel='group')
+								img.hover-shade(alt='', src='img/gal_hover.png')
+								img(alt='', style='width: 220px; height: 160px;', src='/images/Government/GSA-CSov(1).JPG')
+						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
+							a.top-link.thumbnail(href='/images/Government/GSA-csov1.JPG', data-rel='group')
+								img.hover-shade(alt='', src='img/gal_hover.png')
+								img(alt='', style='width: 220px; height: 160px;', src='/images/Government/GSA-csov1.JPG')
+
