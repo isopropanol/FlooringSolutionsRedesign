@@ -1,10 +1,16 @@
 extends ../layout
 block append content
+	script
+		(function(){
+			$('.span.main-column.two-columns-left p').each(function(e){
+
+				})
+		})
 	.page-title.page-title-green.stacked-title
 		.container
 			.row.show-grid
 				.span12
-					h1 Products
+					h1 Projects
 	.main-content
 		.container
 				.row.show-grid
@@ -39,9 +45,7 @@ block append content
 											.side-tick.left-side-tick
 							.span9.main-column.two-columns-left
 							
-								p
-									a(href="#gallery-0") Airbus
-							
+								h2 Projects
 								p
 									a(href="#gallery-1") CBRE
 								p
@@ -51,23 +55,7 @@ block append content
 								p
 									a(href="#gallery-4") Scitor
 				.portfolio-grid-1.main-block.col-wrapper
-					ul#gallery-0.thumbnails.gallery(style="position:relative;")
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/commercial/Airbus.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/commercial/Airbus.jpg')
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/commercial/Airbus1.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/commercial/Airbus1.jpg')
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/commercial/Airbus2.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/commercial/Airbus2.jpg')
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/commercial/Airbus3.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/commercial/Airbus3.jpg')
+					
 					ul#gallery-1.thumbnails.gallery(style="position:relative;")
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/commercial/CBRE.JPG', data-rel='group')
