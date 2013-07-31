@@ -55,6 +55,10 @@ app.get('/arts',function(req,res){
 	res.render('projects/arts',
 		{title:"Arts and Entertainment"}		)
 })
+app.get('/commercial',function(req,res){
+	res.render('projects/commercial',
+		{title:"Commercial"}		)
+})
 
 var port = process.env.PORT || 3000;
 
