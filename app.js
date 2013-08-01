@@ -55,6 +55,10 @@ app.get('/ourFacilities',function(req,res){
 	res.render('ourFacilities',
 		{title:"Our Facilities"}		)
 })
+app.get('/environment',function(req,res){
+	res.render('environment',
+		{title:"Environment"}		)
+})
 app.get('/arts',function(req,res){
 	res.render('projects/arts',
 		{title:"Arts and Entertainment"}		)
