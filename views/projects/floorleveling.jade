@@ -15,9 +15,6 @@ block append content
 								.side-nav.sidebar-block.left-side-nav
 									ul
 										li.first-nav-child
-											a(href='/arts') Arts and Entertainment
-											.side-tick.left-side-tick
-										li
 											a(href='/commercial') Commercial
 											.side-tick.left-side-tick
 										li
@@ -26,35 +23,22 @@ block append content
 										li
 											a(href='/education') Education
 											.side-tick.left-side-tick
-										li.active
-											a(href='/floorleveling') Floor Leveling
-											.side-tick.left-side-tick
+										
 										li
 											a(href='/government') Government
 											.side-tick.left-side-tick
 										li
 											a(href='/health') Health
 											.side-tick.left-side-tick
-										li.last-nav-child
-											a(href='/lawfirms') Law Firms
+										li.active.last-nav-child
+											a(href='/floorleveling') Floor Leveling
 											.side-tick.left-side-tick
 							.span9.main-column.two-columns-left
 								h2 Projects
-								p
-									a(href="#gallery-0") Floor Leveling
-								p
-									a(href="#gallery-1") Airbus Floor Leveling
+								
 							
 				.portfolio-grid-1.main-block.col-wrapper
 					ul#gallery-0.thumbnails.gallery(style="position:relative;")
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/FloorLeveling/Picture1.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/FloorLeveling/Picture1.jpg')
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/FloorLeveling/Picture2.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/FloorLeveling/Picture2.jpg')
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/FloorLeveling/Picture3.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -64,10 +48,14 @@ block append content
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/FloorLeveling/Picture4.jpg')
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/FloorLeveling/Picture5.jpg', data-rel='group')
+							a.top-link.thumbnail(href='/images/FloorLeveling/Picture2.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/FloorLeveling/Picture5.jpg')
-					ul#gallery-1.thumbnails.gallery(style="position:relative;")
+								img(alt='', style='width: 220px; height: 160px;', src='/images/FloorLeveling/Picture2.jpg')
+						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
+							a.top-link.thumbnail(href='/images/FloorLeveling/Picture1.jpg', data-rel='group')
+								img.hover-shade(alt='', src='img/gal_hover.png')
+								img(alt='', style='width: 220px; height: 160px;', src='/images/FloorLeveling/Picture1.jpg')
+						
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/Commercial/Airbus.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -85,11 +73,3 @@ block append content
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/commercial/Airbus3.jpg')
 
-	script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
-	script
-			$('.span9.main-column.two-columns-left p a').each(function(e){
-					var href = $(this).attr('href');
-					var val = $(this).text();
-					$(href).prepend('<h3>'+val+'</h3>');
-				})
-		

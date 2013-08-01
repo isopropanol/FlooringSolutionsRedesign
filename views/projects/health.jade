@@ -15,9 +15,6 @@ block append content
 								.side-nav.sidebar-block.left-side-nav
 									ul
 										li.first-nav-child
-											a(href='/arts') Arts and Entertainment
-											.side-tick.left-side-tick
-										li
 											a(href='/commercial') Commercial
 											.side-tick.left-side-tick
 										li
@@ -26,9 +23,7 @@ block append content
 										li
 											a(href='/education') Education
 											.side-tick.left-side-tick
-										li
-											a(href='/floorleveling') Floor Leveling
-											.side-tick.left-side-tick
+										
 										li
 											a(href='/government') Government
 											.side-tick.left-side-tick
@@ -36,7 +31,7 @@ block append content
 											a(href='/health') Health
 											.side-tick.left-side-tick
 										li.last-nav-child
-											a(href='/lawfirms') Law Firms
+											a(href='/floorleveling') Floor Leveling
 											.side-tick.left-side-tick
 							.span9.main-column.two-columns-left
 								h2 Projects
@@ -73,7 +68,7 @@ block append content
 							a.top-link.thumbnail(href='/images/Health/AlexINOVAALEXANDRIA.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/AlexINOVAALEXANDRIA.jpg')
-					ul#gallery-1.thumbnails.gallery(style="position:relative;")
+					
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/Health/FairfaxPed..jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -114,7 +109,7 @@ block append content
 							a.top-link.thumbnail(href='/images/Health/FFHI.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/FFHI.jpg')
-					ul#gallery-2.thumbnails.gallery(style="position:relative;")
+					
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/Health/FO.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -135,7 +130,7 @@ block append content
 							a.top-link.thumbnail(href='/images/Health/INOVAFO.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/INOVAFO.jpg')
-					ul#gallery-3.thumbnails.gallery(style="position:relative;")
+					
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/Health/INOVALLoudoun.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -164,20 +159,7 @@ block append content
 							a.top-link.thumbnail(href='/images/Health/LoudounPeds..jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/LoudounPeds..jpg')
-					ul#gallery-4.thumbnails.gallery(style="position:relative;")
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/Health/NationalCancerInst..jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/NationalCancerInst..jpg')
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/Health/NCI.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/NCI.jpg')
-						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
-							a.top-link.thumbnail(href='/images/Health/NCI1.jpg', data-rel='group')
-								img.hover-shade(alt='', src='img/gal_hover.png')
-								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/NCI1.jpg')
-					ul#gallery-5.thumbnails.gallery(style="position:relative;")
+					
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/Health/RestonH.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -186,7 +168,7 @@ block append content
 							a.top-link.thumbnail(href='/images/Health/RestonH1.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/RestonH1.jpg')
-					ul#gallery-6.thumbnails.gallery(style="position:relative;")
+					
 						li.span3.small.hp-wrapper.item.isotope-item(style='float: left;')
 							a.top-link.thumbnail(href='/images/Health/Stafford0Hospital.jpg', data-rel='group')
 								img.hover-shade(alt='', src='img/gal_hover.png')
@@ -204,11 +186,5 @@ block append content
 								img.hover-shade(alt='', src='img/gal_hover.png')
 								img(alt='', style='width: 220px; height: 160px;', src='/images/Health/StaffordH..jpg')
 
-	script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
-	script
-			$('.span9.main-column.two-columns-left p a').each(function(e){
-					var href = $(this).attr('href');
-					var val = $(this).text();
-					$(href).prepend('<h3>'+val+'</h3>');
-				})
+	
 		
