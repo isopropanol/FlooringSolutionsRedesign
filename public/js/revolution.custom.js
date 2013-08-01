@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		$.fn.css = $.fn.cssOriginal;
 
 	$('.banner').revolution({
-		delay:9000,
+		delay:6000,
 		
 		startwidth:940,
                 startheight:400,
