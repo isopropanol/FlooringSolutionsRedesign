@@ -27,9 +27,9 @@ app.get('/about',function(req,res){
 	res.render('about',
 		{title:"About"}		)
 })
-app.get('/portfolio',function(req,res){
-	res.render('portfolio',
-		{title:"Portfolio"}		)
+app.get('/gallery',function(req,res){
+	res.render('gallery',
+		{title:"Gallery"}		)
 })
 app.get('/services',function(req,res){
 	res.render('services',
