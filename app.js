@@ -18,76 +18,79 @@ app.use(stylus.middleware(
 	, compile:compile
 }));
 app.use(express.static(__dirname+'/public'));
-
-app.get('/',function(req,res){
+app.get('/index.htm',function(req,res){
 	res.render('index',
 		{title:"Flooring Solutions Inc"}		)
 })
-app.get('/about',function(req,res){
+app.get('/home',function(req,res){
+	res.render('index',
+		{title:"Flooring Solutions Inc"}		)
+})
+app.get('/about.html',function(req,res){
 	res.render('about',
 		{title:"About"}		)
 })
-app.get('/gallery',function(req,res){
+app.get('/gallery.html',function(req,res){
 	res.render('gallery',
 		{title:"Gallery"}		)
 })
-app.get('/services',function(req,res){
+app.get('/services.html',function(req,res){
 	res.render('services',
 		{title:"Services"}		)
 })
-app.get('/products',function(req,res){
+app.get('/products.html',function(req,res){
 	res.render('products',
 		{title:"Products"}		)
 })
-app.get('/projects',function(req,res){
+app.get('/projects.html',function(req,res){
 	res.render('projects',
 		{title:"Projects"}		)
 })
-app.get('/contactus',function(req,res){
+app.get('/contactus.html',function(req,res){
 	res.render('contactus',
 		{title:"Contact Us"}		)
 })
-app.get('/team',function(req,res){
+app.get('/team.html',function(req,res){
 	res.render('team',
 		{title:"Team"}		)
 })
-app.get('/ourFacilities',function(req,res){
+app.get('/ourFacilities.html',function(req,res){
 	res.render('ourFacilities',
 		{title:"Our Facilities"}		)
 })
-app.get('/environment',function(req,res){
+app.get('/environment.html',function(req,res){
 	res.render('environment',
 		{title:"Environment"}		)
 })
-app.get('/arts',function(req,res){
+app.get('/arts.html',function(req,res){
 	res.render('projects/arts',
 		{title:"Arts and Entertainment"}		)
 })
-app.get('/commercial',function(req,res){
+app.get('/commercial.html',function(req,res){
 	res.render('projects/commercial',
 		{title:"Commercial"}		)
 })
-app.get('/condominiums',function(req,res){
+app.get('/condominiums.html',function(req,res){
 	res.render('projects/condominiums',
 		{title:"Condominiums and Hospitality"}		)
 })
-app.get('/education',function(req,res){
+app.get('/education.html',function(req,res){
 	res.render('projects/education',
 		{title:"Education"}		)
 })
-app.get('/floorleveling',function(req,res){
+app.get('/floorleveling.html',function(req,res){
 	res.render('projects/floorleveling',
 		{title:"Floor Leveling"}		)
 })
-app.get('/government',function(req,res){
+app.get('/government.html',function(req,res){
 	res.render('projects/government',
 		{title:"Government"}		)
 })
-app.get('/health',function(req,res){
+app.get('/health.html',function(req,res){
 	res.render('projects/health',
 		{title:"Health"}		)
 })
-app.get('/lawfirms',function(req,res){
+app.get('/lawfirms.html',function(req,res){
 	res.render('projects/lawfirms',
 		{title:"Law Firms"}		)
 })
